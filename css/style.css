@@ -13,16 +13,19 @@
     border-radius: 8px;
 }
 
+
 body {
     margin:0;
     background-color: #d6deee;
+    background-image: linear-gradient(rgba(228,236,221,0.603),rgba(210,233,215,0.568)),url("../images/fundal.jpg");
+    background-size: cover;
     font-size: 18px;
     font-family: 'Noto Sans', sans-serif;
 }
 
 header {
     height:70px;
-    background-color: #0f1626;
+    background-color: #610c1a;
     position: fixed;
     width: 100%;
     padding-top: 20px;
@@ -49,8 +52,8 @@ aside {
     width: 190px;
     height: 100vh;
     position:fixed;
-    background:linear-gradient(to bottom,#18243f,#30415d) ;
-    padding-top: 10px;
+    background:linear-gradient(to bottom,#d85959,#941d1d) ;
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -69,13 +72,20 @@ aside a {
 }
 
 .pr {
+    text-align: justify;
     line-height: 170%;
     border-left: 6px solid #f54028;
     padding-left: 12px;
+    color: (20,26,20);
 }
 
 .row {
     overflow: auto;
+}
+
+.color {
+    border-radius: 15px;
+    background-color: (198,209,188,0.541);
 }
 
 [class^="col-"] {
@@ -100,15 +110,45 @@ aside a {
     margin-bottom: 5px;
     margin-top: 10px;
     display: inline-block;
+    color: (17,56,17,0.808);
 }
 
 .sat-video {
     display: block;
-    max-height: 50vh;
-    margin: 20px auto;
+    height: 50vh;
+    margin: 40px auto;
     max-width: 100%;
     border-radius: 8px;
-    margin-bottom: 40px;
+    
+}
+
+.img-inst {
+    height: 250px;
+    width: 300px;
+    object-fit:cover ;
+    margin: 20px;
+    filter: drop-shadow(7px 5px 1px #699053d2);
+    border: 6px solid #284d2d;
+    border-radius: 10px;
+    display: block;
+    margin-left: 250px;
+    margin-right: auto;
+}
+
+.inst {
+   border: none;
+    width: 60%;
+    height: 250px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 20px;
+    text-align: justify;
+    font-size: 16px;
+    border: 6px solid #284d2d;
+    background-color: #596d4e88;
+    border-radius: 5px;
+    box-shadow: 8px 5px 15px #699053d2;
+    overflow: auto;
 }
 
 .gallery {
@@ -127,8 +167,9 @@ aside a {
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) skew(-1deg);
     transition: all 0.3s;
+    filter: brightness(120%) drop-shadow(7px 5px 1px #789c73d2);
 }
 
 .row-event {
@@ -221,6 +262,7 @@ aside a {
     
     main {
         margin: 0px;
+        /*margin-top:10px;*/
         padding: 10px 15px 20px 15px;
     }
 
@@ -241,10 +283,6 @@ aside a {
         display: block;
     }
     
-    }
-
-   
-
 
 
 }
